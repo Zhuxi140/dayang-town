@@ -26,23 +26,45 @@
 
     <properties>
         <java.version>17</java.version>
-        <tomcat.version>10.1.49</tomcat.version>
+        <tomcat.version>10.1.50</tomcat.version>
         <jackson-bom.version>2.21.1</jackson-bom.version>
         <logback.version>1.5.25</logback.version>
         <assertj.version>3.27.7</assertj.version>
+        <mysql.version>8.0.33</mysql.version>
+        <mybatis.version>3.0.5</mybatis.version>
+        <jwt.version>0.12.6</jwt.version>
+        <protobuf.version>4.28.3</protobuf.version>
+        <lang3.version>3.18.0</lang3.version>
     </properties>
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
-        </dependency>
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.dayang</groupId>
+                <artifactId>dayang-common</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.dayang</groupId>
+                <artifactId>dayang-framework</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.google.protobuf</groupId>
+                <artifactId>protobuf-java</artifactId>
+                <version>${protobuf.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${lang3.version}</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
 
     <build>
 

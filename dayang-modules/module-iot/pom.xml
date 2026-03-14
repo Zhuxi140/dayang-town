@@ -7,14 +7,11 @@
         <artifactId>dayang-modules</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <groupId>com.zhuxi</groupId>
     <artifactId>module-iot</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
     <dependencies>
     </dependencies>
 
-    <build>
-    </build>
 
 </project>
