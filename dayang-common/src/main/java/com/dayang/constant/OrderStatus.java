@@ -11,14 +11,15 @@ import lombok.Getter;
 @AllArgsConstructor
 public enum OrderStatus {
 
-    PENDING_PAY(1),
-    PAID_WAIT_CONFIRM(2),
-    WAITING_ACTION(3),
-    PROCESSING(4),
-    COMPLETED(5),
-    CLOSED(6);
+    PENDING_PAY(1,"待支付"),
+    PAID_WAIT_CONFIRM(2,"已支付/待确认"),
+    WAITING_ACTION(3,"待核销/待发货"),
+    PROCESSING(4,"入住中/消费中/已发货"),
+    COMPLETED(5,"已完成/已签收"),
+    CLOSED(6,"已关闭/超时未付");
 
     private final int code;
+    private final String msg;
 
     /**
      * 通过code获取枚举

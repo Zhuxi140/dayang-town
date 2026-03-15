@@ -12,13 +12,14 @@ import lombok.Getter;
 @Getter
 public enum RefundStatus {
 
-    NO_REFUND(0),
-    REFUNDING(1),
-    PARTIAL_REFUNDED(2),
-    FULL_REFUNDED(3),
-    REFUND_REJECTED(4);
+    NO_REFUND(0,"无售后/正常状态"),
+    REFUNDING(1,"售后中"),
+    PARTIAL_REFUNDED(2,"部分退款成功"),
+    FULL_REFUNDED(3,"全额退款成功"),
+    REFUND_REJECTED(4,"商家拒绝退款");
 
     private final int code;
+    private final String msg;
 
     /**
      * 通过code获取枚举
