@@ -8,3 +8,9 @@ spring:
     password: dayang@2026
 server:
   port: 8080
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
