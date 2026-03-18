@@ -1,7 +1,7 @@
 package com.dayang.web;
 
 import com.dayang.api.Result;
-import com.dayang.constant.ErrorCodeEnum;
+import com.dayang.constant.Enum.ErrorCodeEnum;
 import com.dayang.exception.*;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.HttpMediaTypeNotSupportedException;

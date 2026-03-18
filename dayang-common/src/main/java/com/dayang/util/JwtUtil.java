@@ -1,7 +1,7 @@
 package com.dayang.util;
 
 import cn.hutool.core.util.StrUtil;
-import com.dayang.constant.ErrorCodeEnum;
+import com.dayang.constant.Enum.ErrorCodeEnum;
 import com.dayang.exception.NotLoginException;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.ExpiredJwtException;

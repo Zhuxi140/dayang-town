@@ -1,11 +1,12 @@
 package com.dayang.util;
 
+import cn.hutool.core.util.DesensitizedUtil;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.crypto.SecureUtil;
 import cn.hutool.crypto.digest.BCrypt;
 import cn.hutool.crypto.digest.DigestUtil;
 import cn.hutool.crypto.symmetric.AES;
-import com.dayang.constant.ErrorCodeEnum;
+import com.dayang.constant.Enum.ErrorCodeEnum;
 import com.dayang.exception.BizException;
 import com.dayang.exception.SystemException;
 import java.nio.charset.StandardCharsets;
@@ -104,6 +105,19 @@ public class CryptoUtil {
             return data;
         }
         return StrUtil.hide(data,3,7);
+    }
+
+    /**
+     * 脱敏姓名
+     * @param data 姓名
+     * @return 脱敏后的姓名
+     */
+    public static String desensitizeName(String data){
+        if (StrUtil.isBlank(data)){
+            return data;
+        }
+        return DesensitizedUtil.chineseName( data);
+
     }
 
 }

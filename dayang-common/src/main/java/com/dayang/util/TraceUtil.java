@@ -32,6 +32,7 @@ public class TraceUtil {
             traceId = IdUtil.fastSimpleUUID();
             MDC.put(TRACE_ID, traceId);
         }
+
         return traceId;
     }
 

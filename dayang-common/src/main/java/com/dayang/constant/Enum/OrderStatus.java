@@ -1,4 +1,4 @@
-package com.dayang.constant;
+package com.dayang.constant.Enum;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,7 +9,7 @@ import lombok.Getter;
  */
 @Getter
 @AllArgsConstructor
-public enum OrderStatus {
+public enum OrderStatus implements BaseEnum {
 
     PENDING_PAY(1,"待支付"),
     PAID_WAIT_CONFIRM(2,"已支付/待确认"),

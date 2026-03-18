@@ -1,4 +1,4 @@
-package com.dayang.constant;
+package com.dayang.constant.Enum;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

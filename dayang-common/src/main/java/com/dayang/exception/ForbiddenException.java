@@ -1,8 +1,8 @@
 package com.dayang.exception;
 
-import com.dayang.constant.ErrorCodeEnum;
+import com.dayang.constant.Enum.ErrorCodeEnum;
 import lombok.Getter;
-import static com.dayang.constant.ErrorCodeEnum.PERMISSION_DENIED;
+import static com.dayang.constant.Enum.ErrorCodeEnum.PERMISSION_DENIED;
 
 /**
  * @author zhuxi

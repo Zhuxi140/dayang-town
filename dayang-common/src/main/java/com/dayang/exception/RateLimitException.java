@@ -1,6 +1,6 @@
 package com.dayang.exception;
 
-import com.dayang.constant.ErrorCodeEnum;
+import com.dayang.constant.Enum.ErrorCodeEnum;
 import lombok.Getter;
 
 /**
