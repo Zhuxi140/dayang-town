@@ -11,9 +11,12 @@ import java.sql.*;
 
 /**
  * @author zhuxi
- * @apiNote 抽象类型处理器
+ * @apiNote 通用枚举转换器
+ * <p>
+ *     实现枚举类与数据库字段的相互映射
+ * </p>
+ *
  */
-@MappedTypes(BaseEnum.class)
 public class UniversalEnumHandler<E extends Enum<E> & BaseEnum> extends BaseTypeHandler<E> {
 
     private final Class<E> type;
